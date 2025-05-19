@@ -69,3 +69,12 @@ footer {
   margin-right: 15px;
   color: #61dafb;
 }
+.highlight-link {
+  color: #61dafb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.highlight-link:hover {
+  text-decoration: underline;
+}
