@@ -257,3 +257,52 @@ nav a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown > .highlight-link {
+  color: #87cefa; /* Light Sky Blue */
+  font-weight: 600;
+  user-select: none; /* prevent accidental text selection */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 8px 0;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 8px 20px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #87cefa; /* light sky blue on hover */
+  color: white;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: none; /* no movement on hover */
+}
