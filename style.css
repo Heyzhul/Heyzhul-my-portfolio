@@ -132,7 +132,7 @@ a:focus {
   }
 }
 nav {
-  background-color: #2e7d32; /* Dark green background */
+  background-color: #2e7d32; /* light blue background */
   padding: 8px 16px;
   display: flex;
   justify-content: center;
@@ -154,12 +154,12 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  background-color: #81c784; /* Lighter green on hover */
+  background-color: #81c784; /* Lighter blue on hover */
   color: #1b5e20;
   outline: none;
 }
 
 nav a.active {
-  background-color: #4caf50; /* Medium green */
+  background-color: #4caf50; /* Medium blue */
   color: #fff;
 }
