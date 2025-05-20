@@ -132,34 +132,34 @@ a:focus {
   }
 }
 nav {
-  background-color: #ffffff;
-  padding: 8px 16px;
+  background-color: #f8f8f8;
+  padding: 6px 12px;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  border-bottom: 1px solid #ddd;
+  gap: 16px;
+  border-bottom: 1px solid #ccc;
   font-family: 'Segoe UI', sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 nav a {
-  color: #333333;
+  color: #333;
   text-decoration: none;
   padding: 6px 10px;
   border-radius: 4px;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 nav a:hover,
 nav a:focus {
-  background-color: #f0f0f0;
-  color: #000000;
-  outline: none;
+  background-color: #eaeaea;
+  color: #000;
 }
 
 nav a.active {
   font-weight: bold;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #000;
 }
+
 
 
