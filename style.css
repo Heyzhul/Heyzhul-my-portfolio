@@ -134,18 +134,19 @@ a:focus {
 nav {
   padding: 10px 0;
   text-align: center;
-  background-color: transparent; /* no background color */
+  background-color: transparent;
 }
 
 nav a {
-  margin: 0 10px;
-  color: #333;
+  margin: 0 12px;
+  color: lightskyblue; /* your original color */
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
+  color: #007acc; /* slightly darker blue on hover */
   text-decoration: underline;
-  color: #000;
 }
