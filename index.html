@@ -7,59 +7,123 @@
   <link rel="stylesheet" href="style.css" />
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    /* DROPDOWN STYLES */
+    .role-nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px 10px;
+      flex-wrap: wrap;
+      background: none;
+      border: none;
+    }
+
+    .dropbtn {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e90ff; /* light sky blue */
+      cursor: pointer;
+      transition: color 0.3s ease;
+      padding: 6px 12px;
+    }
+
+    .dropbtn:hover {
+      color: #0c5b9e;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      background-color: white;
+      min-width: 180px;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 10;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 8px;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.95rem;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
+
 <body>
   <header data-aos="fade-down">
-  <h1>Hazel Otieno</h1>
-  <p data-aos="fade-up" data-aos-delay="200">
-   <div class="dropdown-container">
-  <div class="dropdown">
-    <span class="highlight-link">Information Manager</span>
-    <div class="dropdown-content">
-      <a href="https://drive.google.com/file/d/1F9f1odl-Og7MGxGVRbCGd_1uB1PB5DVR/view?usp=sharing" target="_blank">View Work</a>
-    </div>
-  </div>
+    <h1>Hazel Otieno</h1>
 
-  <div class="dropdown">
-    <span class="highlight-link">Film Producer</span>
-    <div class="dropdown-content">
-      <a href="film.html">See Projects</a>
-    </div>
-  </div>
+    <p data-aos="fade-up" data-aos-delay="200">
+      <nav class="role-nav">
+        <div class="dropdown">
+          <button class="dropbtn">Information Manager</button>
+          <div class="dropdown-content">
+            <a href="https://drive.google.com/file/d/1F9f1odl-Og7MGxGVRbCGd_1uB1PB5DVR/view?usp=sharing" target="_blank">Strategy Docs</a>
+          </div>
+        </div>
 
-  <div class="dropdown">
-    <span class="highlight-link">Civic Tech Enthusiast</span>
-    <div class="dropdown-content">
+        <div class="dropdown">
+          <button class="dropbtn">Film Producer</button>
+          <div class="dropdown-content">
+            <a href="film.html">See Projects</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Civic Tech</button>
+          <div class="dropdown-content">
+            <a href="maoni.html">Maoni Project</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Photographer</button>
+          <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1Aysp5LrjpEusdEyHEWhb5YbdVQUC1iNU?usp=drive_link" target="_blank">Gallery</a>
+          </div>
+        </div>
+      </nav>
+    </p>
+
+    <img src="hazel-profile.jpeg" alt="Hazel's Photo" class="profile-img" data-aos="zoom-in" data-aos-delay="400" />
+
+    <nav>
+      <a href="#about">About</a>
       <a href="maoni.html">Maoni Project</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <span class="highlight-link">Photographer</span>
-    <div class="dropdown-content">
-      <a href="https://drive.google.com/drive/folders/1Aysp5LrjpEusdEyHEWhb5YbdVQUC1iNU?usp=drive_link" target="_blank">Gallery</a>
-    </div>
-  </div>
-</div>
-
-  </p>
-
-  <img src="hazel-profile.jpeg" alt="Hazel's Photo" class="profile-img" data-aos="zoom-in" data-aos-delay="400" />
-<nav>
-  <a href="#about">About</a>
-  <a href="maoni.html">Maoni Project</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-
-
-</header>
-
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>I'm passionate about civic engagement ,which motivates me to work on projects that promote public participation.I bring a unique lens through film production creating impactful stories that resonate with audiences.
-    I also have experience in information management and innovation,especially in developing websites to solve real-world problems.
+    <p>I'm passionate about civic engagement, which motivates me to work on projects that promote public participation. I bring a unique lens through film production creating impactful stories that resonate with audiences.
+      I also have experience in information management and innovation, especially in developing websites to solve real-world problems.
     </p>
     <p>🔗 <a href="https://drive.google.com/file/d/1cFXk_mKLRtwi_9I7vYAlwjuev3Se0mqV/view?usp=sharing" target="_blank" class="highlight-link">Download My CV</a></p>
   </section>
@@ -108,7 +172,10 @@
 </html>
 
 
-
+  
+ 
+ 
+ 
   
 
   
