@@ -116,3 +116,18 @@ a:focus {
     margin: 10px auto;
   }
 }
+@media (max-width: 768px) {
+  /* Existing mobile styles here ... */
+
+  /* Make Maoni section content bigger and more spaced */
+  #about, #skills, #contact {
+    font-size: 1.2rem;   /* bigger text */
+    line-height: 1.5;    /* easier to read */
+    padding: 15px 20px;  /* more padding */
+  }
+
+  /* Optionally make headings bigger */
+  #about h2, #skills h2, #contact h2 {
+    font-size: 1.6rem;
+  }
+}
