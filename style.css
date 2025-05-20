@@ -79,6 +79,12 @@ footer {
   text-decoration: underline;
 }
 
+/* === Fix Blue Outline + Profile Image Styling === */
+
+a:focus {
+  outline: none;
+}
+
 .profile-img {
   width: 200px;
   height: 200px;
@@ -86,6 +92,8 @@ footer {
   display: block;
   margin: 20px auto;
   border: none;
-  border-radius: 50%; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 }
