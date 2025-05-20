@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hazel Otieno Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
   <header>
     <h1>Hazel Otieno</h1>
-<p>
-  <a href="https://drive.google.com/file/d/1F9f1odl-Og7MGxGVRbCGd_1uB1PB5DVR/view?usp=sharing" target="_blank" class="highlight-link">Information Manager</a> |
-  <a href="film.html" class="highlight-link">Film Producer</a> |
-  <a href="maoni.html" class="highlight-link">Civic Tech Enthusiast</a> |
-  <a href="https://drive.google.com/drive/folders/1Aysp5LrjpEusdEyHEWhb5YbdVQUC1iNU?usp=drive_link" target="_blank" class="highlight-link">Photographer</a>
-</p>
+    <p>
+      <a href="https://drive.google.com/file/d/1F9f1odl-Og7MGxGVRbCGd_1uB1PB5DVR/view?usp=sharing" target="_blank" class="highlight-link">Information Manager</a> |
+      <a href="film.html" class="highlight-link">Film Producer</a> |
+      <a href="maoni.html" class="highlight-link">Civic Tech Enthusiast</a> |
+      <a href="https://drive.google.com/drive/folders/1Aysp5LrjpEusdEyHEWhb5YbdVQUC1iNU?usp=drive_link" target="_blank" class="highlight-link">Photographer</a>
+    </p>
 
-
-
-  <img src="hazel-profile.jpeg" alt="Hazel's Photo" class="profile-img" />
+    <img src="hazel-profile.jpeg" alt="Hazel's Photo" class="profile-img" />
 
     <nav>
       <a href="#about">About</a>
@@ -27,16 +27,15 @@
     </nav>
   </header>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>I'm passionate about civic engagement ,which motivates me to work on projects that promote public participation.I bring a unique lens through film production creating impactful stories that resonate with audiences.
-I also have experience in information management and innovation,especially in developing websites to solve real-world problems.
+    I also have experience in information management and innovation,especially in developing websites to solve real-world problems.
+    </p>
     <p>🔗 <a href="https://drive.google.com/file/d/1cFXk_mKLRtwi_9I7vYAlwjuev3Se0mqV/view?usp=sharing" target="_blank" class="highlight-link">Download My CV</a></p>
-
   </section>
   
-
-  <section id="skills">
+  <section id="skills" data-aos="fade-left">
     <h2>Skills</h2>
     <ul>
       <li>HTML, CSS, JavaScript</li>
@@ -46,7 +45,7 @@ I also have experience in information management and innovation,especially in de
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact" data-aos="fade-right">
     <h2>Contact Me</h2>
     <form id="contact-form">
       <input type="text" name="name" placeholder="Name" required />
@@ -65,7 +64,23 @@ I also have experience in information management and innovation,especially in de
     <p>Portfolio of Hazel Otieno © 2025</p>
   </footer>
 
-  <!-- Only one script tag needed -->
+  <!-- Your existing script -->
   <script src="script.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 </body>
 </html>
+
+
+
+  
+
+  
+  
