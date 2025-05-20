@@ -78,3 +78,11 @@ footer {
 .highlight-link:hover {
   text-decoration: underline;
 }
+
+.profile-img {
+  width: 200px;
+  height: auto;
+  display: block;
+  border: 2px dashed blue; 
+  margin: 20px auto;        
+}
