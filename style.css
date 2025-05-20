@@ -81,8 +81,11 @@ footer {
 
 .profile-img {
   width: 200px;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
   display: block;
-  border: 2px dashed blue; 
-  margin: 20px auto;        
+  margin: 20px auto;
+  border: none;
+  border-radius: 50%; /* makes it a circle */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* soft shadow */
 }
