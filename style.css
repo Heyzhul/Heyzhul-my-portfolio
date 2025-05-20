@@ -133,19 +133,19 @@ a:focus {
 }
 nav {
   background-color: #ffffff;
-  padding: 4px 8px; /* Reduced padding = smaller height */
+  padding: 8px 16px;
   display: flex;
   justify-content: center;
-  gap: 14px; /* Slightly tighter spacing between links */
+  gap: 20px;
   border-bottom: 1px solid #ddd;
   font-family: 'Segoe UI', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
 }
 
 nav a {
-  color: #333;
+  color: #333333;
   text-decoration: none;
-  padding: 4px 6px; /* Smaller link padding */
+  padding: 6px 10px;
   border-radius: 4px;
   transition: all 0.2s ease;
 }
@@ -153,7 +153,7 @@ nav a {
 nav a:hover,
 nav a:focus {
   background-color: #f0f0f0;
-  color: #000;
+  color: #000000;
   outline: none;
 }
 
@@ -161,4 +161,5 @@ nav a.active {
   font-weight: bold;
   border-bottom: 2px solid #333;
 }
+
 
