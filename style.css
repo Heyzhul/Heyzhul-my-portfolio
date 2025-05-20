@@ -97,3 +97,22 @@ a:focus {
 }
 
 }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  header, section, footer {
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+  }
+}
