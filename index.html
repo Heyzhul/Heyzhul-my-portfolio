@@ -8,109 +8,138 @@
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
-    /* LightSkyBlue = #87cefa */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
 
-    .role-nav {
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #87cefa; /* Light Sky Blue */
+      color: #fff;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 1rem;
+    }
+
+    .dropdown-container {
       display: flex;
       justify-content: center;
-      gap: 25px;
-      padding: 20px 10px;
       flex-wrap: wrap;
-      background: none;
-      border: none;
-    }
-
-    .dropbtn {
-      background: none;
-      border: none;
-      font-size: 1rem;
-      font-weight: 600;
-      color: #87cefa; /* LightSkyBlue */
-      cursor: pointer;
-      transition: color 0.3s ease;
-      padding: 6px 12px;
-    }
-
-    .dropbtn:hover {
-      color: #5caee4;
+      gap: 1rem;
     }
 
     .dropdown {
       position: relative;
+      display: inline-block;
+    }
+
+    .highlight-link {
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      background-color: #87cefa;
+      border-radius: 5px;
     }
 
     .dropdown-content {
       display: none;
       position: absolute;
-      top: 35px;
-      left: 0;
       background-color: white;
-      min-width: 180px;
-      padding: 10px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      z-index: 10;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: all 0.3s ease;
+      min-width: 140px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      z-index: 1;
     }
 
     .dropdown-content a {
-      display: block;
-      padding: 8px;
       color: #333;
+      padding: 0.5rem 1rem;
+      display: block;
       text-decoration: none;
-      border-radius: 5px;
-      font-size: 0.95rem;
     }
 
     .dropdown-content a:hover {
-      background-color: #f0f8ff; /* subtle sky blue tint */
+      background-color: #f0f0f0;
     }
 
     .dropdown:hover .dropdown-content {
       display: block;
-      opacity: 1;
-      transform: translateY(0);
     }
 
-    nav a {
-      color: #87cefa;
-      margin: 0 10px;
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f5f5f5;
+      margin-top: 2rem;
+    }
+
+    .socials a {
+      margin: 0 1rem;
       text-decoration: none;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .highlight-link {
-      color: #87cefa;
-      text-decoration: underline;
+      color: #333;
     }
   </style>
 </head>
-
 <body>
   <header data-aos="fade-down">
     <h1>Hazel Otieno</h1>
+    <div class="dropdown-container" data-aos="fade-up" data-aos-delay="200">
+      <div class="dropdown">
+        <span class="highlight-link">My Work</span>
+        <div class="dropdown-content">
+          <a href="https://drive.google.com/file/d/1F9f1odl-Og7MGxGVRbCGd_1uB1PB5DVR/view?usp=sharing" target="_blank">View Work</a>
+        </div>
+      </div>
 
-   <div class="dropdown-container">
-  <div class="dropdown">
-    <span class="highlight-link">My Work</span>
-    <div class="dropdown-content">
-      <a href="https://drive.google.com/file/d/1F9f1odl-Og7MGxGVRbCGd_1uB1PB5DVR/view?usp=sharing" target="_blank">Information Manager</a>
-      <a href="film.html">Film Producer</a>
-      <a href="maoni.html">Civic Tech Enthusiast</a>
-      <a href="https://drive.google.com/drive/folders/1Aysp5LrjpEusdEyHEWhb5YbdVQUC1iNU?usp=drive_link" target="_blank">Photographer</a>
+      <div class="dropdown">
+        <span class="highlight-link">Film Producer</span>
+        <div class="dropdown-content">
+          <a href="film.html">See Projects</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <span class="highlight-link">Civic Tech Enthusiast</span>
+        <div class="dropdown-content">
+          <a href="maoni.html">Maoni Project</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <span class="highlight-link">Photographer</span>
+        <div class="dropdown-content">
+          <a href="https://drive.google.com/drive/folders/1Aysp5LrjpEusdEyHEWhb5YbdVQUC1iNU?usp=drive_link" target="_blank">Gallery</a>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
 
     <img src="hazel-profile.jpeg" alt="Hazel's Photo" class="profile-img" data-aos="zoom-in" data-aos-delay="400" />
-
     <nav>
       <a href="#about">About</a>
       <a href="maoni.html">Maoni Project</a>
@@ -120,12 +149,10 @@
 
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>I'm passionate about civic engagement, which motivates me to work on projects that promote public participation. I bring a unique lens through film production creating impactful stories that resonate with audiences.
-      I also have experience in information management and innovation, especially in developing websites to solve real-world problems.
-    </p>
+    <p>I'm passionate about civic engagement, which motivates me to work on projects that promote public participation. I bring a unique lens through film production creating impactful stories that resonate with audiences. I also have experience in information management and innovation, especially in developing websites to solve real-world problems.</p>
     <p>🔗 <a href="https://drive.google.com/file/d/1cFXk_mKLRtwi_9I7vYAlwjuev3Se0mqV/view?usp=sharing" target="_blank" class="highlight-link">Download My CV</a></p>
   </section>
-  
+
   <section id="skills" data-aos="fade-left">
     <h2>Skills</h2>
     <ul>
@@ -155,6 +182,7 @@
     <p>Portfolio of Hazel Otieno © 2025</p>
   </footer>
 
+  <!-- Your existing script -->
   <script src="script.js"></script>
 
   <!-- AOS JS -->
